@@ -1,0 +1,50 @@
+// IMPORTS
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../node_modules/bulma/css/bulma.min.css";
+
+// Overrides
+body {
+    min-height: 100vh;
+}
+
+.field-label {
+    flex-grow: 0.5;
+}
+
+.dino-card {
+    figure {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        img {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+        }
+    }
+}
+
+// Dino card
+.dino-card {
+    .dino-card__favourite {
+        z-index: 2;
+
+        &:hover {
+            text-decoration: none;
+        }        
+    }
+    
+    &.is-favourite {
+        border: 1px solid #01ca592e;
+    }
+}
+
+// Dino details
+.dino-info {
+    .dino-info__favourite {
+        &:hover {
+            text-decoration: none;
+        }        
+    }
+}
